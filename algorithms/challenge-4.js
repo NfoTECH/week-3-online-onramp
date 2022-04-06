@@ -21,6 +21,22 @@ console.log(listSorting(5, [1, 2, 3, 4, 5]))
 console.log(listSorting(5, [1, 2, 3, 4, 4, 4]))
 console.log(listSorting(0, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]))
 
+//----------------------------------------------------------------
+function listSortings (needle, haystack) {
+    if (!Array.isArray(haystack[0])) {
+        return haystack.lastIndexOf(needle);
+    }
+    for (let row = haystack.length - 1; row >=0; row--) {
+        if (col !== -1) {
+            return [row, col]
+        }
+    }
+    return -1
+}
+console.log(listSortings(5, [1, 2, 3, 4, 5]))
+console.log(listSortings(5, [1, 2, 3, 4, 4, 4]))
+console.log(listSortings(0, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]))
+
 
 
 // Input:
